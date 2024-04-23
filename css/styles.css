@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk";
+}
+
+.container {
+  width: min(90%, 736px);
+  height: 512px;
+  border-radius: 2rem;
+  box-shadow: 4px 40px 60px -10px hsla(241, 100%, 89%, 0.45);
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container section {
+  width: 50%;
+  padding: 2.4rem 2.5rem;
+}
+.container .results {
+  border-radius: 2rem;
+  background: linear-gradient(rgb(102, 67, 255), hsl(241, 81%, 54%));
+  color: hsl(221, 100%, 96%);
+  text-align: center;
+}
+.container .results h2 {
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+}
+.container .results .results-score {
+  width: 200px;
+  height: 200px;
+  margin: 2.2rem auto 1.7rem;
+  border-radius: 50%;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .results .results-score .score {
+  font-size: clamp(3.6rem, 4vw, 4.4rem);
+  font-weight: 800;
+  margin-bottom: 0rem;
+}
+.container .results .results-score span {
+  margin-top: -0.45rem;
+  font-weight: 500;
+  font-size: clamp(1rem, 4vw, 1.15rem);
+  color: hsl(241, 100%, 89%);
+}
+.container .results h3 {
+  margin-bottom: 0.875rem;
+  font-size: clamp(1.525rem, 4vw, 2rem);
+}
+.container .results p {
+  padding: 0 1.25rem;
+  font-size: clamp(1rem, 4vw, 1.125rem);
+  color: hsl(241, 100%, 89%);
+}
+.container .summary h2 {
+  margin-bottom: 1.75rem;
+  color: hsl(224, 30%, 27%);
+}
+.container .summary .categories {
+  display: grid;
+  row-gap: 1rem;
+}
+.container .summary .categories .category {
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(1rem, 4vw, 1.15rem);
+}
+.container .summary .categories .category.reaction {
+  background: hsla(0, 100%, 67%, 0.05);
+  color: hsl(0, 100%, 67%);
+}
+.container .summary .categories .category.memory {
+  background: hsla(39, 100%, 56%, 0.05);
+  color: hsl(39, 100%, 56%);
+}
+.container .summary .categories .category.verbal {
+  background: hsla(166, 100%, 37%, 0.05);
+  color: hsl(166, 100%, 37%);
+}
+.container .summary .categories .category.visual {
+  background: hsla(234, 85%, 45%, 0.05);
+  color: hsl(234, 85%, 45%);
+}
+.container .summary .categories .category .name {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.container .summary .categories .category .category-score {
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 700;
+}
+.container .summary .categories .category .category-score b {
+  color: hsl(224, 30%, 27%);
+  margin-right: 0.175rem;
+}
+.container button {
+  width: 100%;
+  margin-top: 2.55rem;
+  padding: 1.015rem 0;
+  border-radius: 2rem;
+  background: hsl(224, 30%, 27%);
+  border: none;
+  display: inline-block;
+  font-size: 1.125rem;
+  color: hsl(221, 100%, 96%);
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.container button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    position: relative;
+    box-shadow: none;
+    flex-direction: column;
+    transform: translate(-50%);
+  }
+  .container section {
+    width: 100%;
+    padding: 1.5rem 2rem;
+  }
+  .container .results {
+    padding-bottom: 2.5rem;
+    border-radius: 0 0 2rem 2rem;
+  }
+  .container .results .results-score {
+    width: 140px;
+    height: 140px;
+    margin: 1.45rem auto;
+  }
+  .container .results .results-score span {
+    margin-top: 0rem;
+  }
+  .container .results h3 {
+    margin-bottom: 0.5rem;
+  }
+  .container .summary h2 {
+    margin-bottom: 1.5rem;
+  }
+  .container .summary .categories {
+    row-gap: 1.2rem;
+  }
+  .container .summary .categories .category {
+    padding: 1rem 0.9rem;
+  }
+  .container button {
+    margin-top: 1.6rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
